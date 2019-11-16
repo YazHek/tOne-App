@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg.turnOnActivity">
+
+
+    <ImageView
+        android:id="@+id/rectangleView"
+        android:layout_width="360dp"
+        android:layout_height="384dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="256dp"
+        android:src="@drawable/ic_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <fragment
+        android:id="@+id/slider_fragment"
+        class="com.lvivdroiddev.toneapp.reg.fragments.TurnOnFragment"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginTop="384dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/turn_on_device"
+            android:layout_width="264dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="111dp"
+            android:text="@string/turn_on_device"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/nextBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/elipse_checked"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse1"
+            app:layout_constraintBottom_toBottomOf="@id/button"
+            app:layout_constraintEnd_toEndOf="@id/elipse1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/elipse1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintBottom_toBottomOf="@id/button"
+            app:layout_constraintEnd_toEndOf="@id/elipse2"
+            app:layout_constraintStart_toStartOf="@id/elipse_checked"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/elipse2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintBottom_toBottomOf="@id/button"
+            app:layout_constraintEnd_toEndOf="@id/elipse3"
+            app:layout_constraintStart_toStartOf="@id/elipse1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/elipse3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintBottom_toBottomOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/elipse2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="328dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="572dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/doger_blue"
+            android:text="@string/next_btn"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/slider_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangleView" />
+
+
+    </fragment>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

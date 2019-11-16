@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">tOne App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="welcome_text">Вітаємо з покупкою tONE! \nДля початку роботи вам потрібно \nзареєструватись.</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="email_hint">clark.kent@gmail.com</string>
+    <string name="registrate">Зареєструватись</string>
+    <string name="social_media">або через соціальні мережі</string>
+    <string name="turn_on_device">Увімкніть пристрій</string>
+    <string name="next_btn">Далі</string>
+    <string name="wi_fi">Приєднайтеся до пристрою  \n    через WI-FI</string>
+    <string name="tone_wifi">Перейдіть в налаштування і виберіть <b>tOne_wifi</b>. Пароль вказано на коробці.</string>
+    <string name="device_connected">Пристрій приєднано!</string>
+    <string name="wi_fi_check">Для продовження перевірте підключення до домашнього Wi-Fi</string>
+</resources>

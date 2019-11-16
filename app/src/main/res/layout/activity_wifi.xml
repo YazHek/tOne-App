@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/wifi_fragment">
+
+    <ImageView
+        android:id="@+id/rectangle_wifiView"
+        android:layout_width="360dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="368dp"
+        android:src="@drawable/ic_rectangle_wifi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <fragment
+        android:id="@+id/slider_fragment"
+        class="com.lvivdroiddev.toneapp.reg.fragments.TurnOnFragment"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/connect_to_wifi"
+            android:layout_width="328dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="292dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="292dp"
+            android:text="@string/wi_fi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_wifiView" />
+
+        <TextView
+            android:id="@+id/tone_text"
+            android:layout_width="328dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="372dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="230dp"
+            android:text="@string/tone_wifi"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_wifiView" />
+
+
+        <ImageView
+            android:id="@+id/elipse_checked"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintBottom_toBottomOf="@id/btn"
+            app:layout_constraintEnd_toEndOf="@id/elipse1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tone_text" />
+
+        <ImageView
+            android:id="@+id/elipse1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse1"
+            app:layout_constraintBottom_toBottomOf="@id/btn"
+            app:layout_constraintEnd_toEndOf="@id/elipse2"
+            app:layout_constraintStart_toStartOf="@id/elipse_checked"
+            app:layout_constraintTop_toTopOf="@+id/tone_text" />
+
+        <ImageView
+            android:id="@+id/elipse2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintBottom_toBottomOf="@id/btn"
+            app:layout_constraintEnd_toEndOf="@id/elipse3"
+            app:layout_constraintStart_toStartOf="@id/elipse1"
+            app:layout_constraintTop_toTopOf="@+id/tone_text" />
+
+        <ImageView
+            android:id="@+id/elipse3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginEnd="114dp"
+            android:layout_marginBottom="36dp"
+            android:src="@drawable/ic_ellipse"
+            app:layout_constraintBottom_toBottomOf="@+id/btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/elipse2"
+            app:layout_constraintTop_toTopOf="@+id/tone_text" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="328dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="572dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/doger_blue"
+            android:text="@string/next_btn"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/slider_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangleView" />
+
+    </fragment>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528377825068",
+    "firebase_url": "https://tone-app-17372.firebaseio.com",
+    "project_id": "tone-app-17372",
+    "storage_bucket": "tone-app-17372.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528377825068:android:0613eed5cd558239bd0e89",
+        "android_client_info": {
+          "package_name": "com.lvivdroiddev.toneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528377825068-3cueugv23gvvsv0kcp07k66v8511hbe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lvivdroiddev.toneapp",
+            "certificate_hash": "398fda856ee089131b3c24ac4dc5d8e3656db62a"
+          }
+        },
+        {
+          "client_id": "528377825068-3liju1kr3jt6cvk22b804kk10ptl6qik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOrBfwlokBGHsCnLkIafgqGjFzUFgQy1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528377825068-3liju1kr3jt6cvk22b804kk10ptl6qik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
